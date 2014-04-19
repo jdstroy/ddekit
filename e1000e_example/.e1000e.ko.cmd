@@ -1,0 +1,1 @@
+cmd_drivers/net/e1000e/e1000e.ko := ld -r -m elf_i386 -T /usr/src/linux-source-2.6.34/scripts/module-common.lds --build-id -o drivers/net/e1000e/e1000e.ko drivers/net/e1000e/e1000e.o drivers/net/e1000e/e1000e.mod.o

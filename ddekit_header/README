@@ -1,0 +1,2 @@
+This is the DDEKit header. It defines the DDEKit-DDE interface.
+These header files are shared across DDEs and DDEKits.

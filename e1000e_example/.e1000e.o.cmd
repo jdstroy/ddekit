@@ -1,0 +1,1 @@
+cmd_drivers/net/e1000e/e1000e.o := ld -m elf_i386   -r -o drivers/net/e1000e/e1000e.o drivers/net/e1000e/82571.o drivers/net/e1000e/ich8lan.o drivers/net/e1000e/es2lan.o drivers/net/e1000e/lib.o drivers/net/e1000e/phy.o drivers/net/e1000e/param.o drivers/net/e1000e/ethtool.o drivers/net/e1000e/netdev.o 

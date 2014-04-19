@@ -1,0 +1,16 @@
+To build user space part:
+ - edit Makefile, so DDEKIT_INCLUDE points to the DDEKit header files
+ - run make
+ - libddekit.a is created
+
+To build kernel modules:
+ - boot kernel for which the modules shall be built
+ - go to modules/ subdirectory
+ - edit Kbuild file, so that ccflags-y variable point to the DDEKit header
+   files
+ - run make
+ - run make modules_install
+ - modules are now installed
+ - the modules uio.ko, uio_pci_generic.ko and uio-dma.ko can now be loaded
+ - watch out to load the just compiled uio.ko and uio_pci_generic.ko modules,
+   and not standard modules, which may be installed

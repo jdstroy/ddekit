@@ -1,0 +1,7 @@
+obj-m += uio_pci_generic.o
+obj-m += uio.o
+obj-m += uio-dma.o
+uio-dma-y = uio_dma.o uio_dma_ops.o
+ccflags-y := -I$(src)/../../ddekit_header/include
+
+

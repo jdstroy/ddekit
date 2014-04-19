@@ -1,0 +1,10 @@
+To build dde-linux2.6:
+ - go to dde-linux2.6/pkg/dde/include/ddekit
+ - create symlinks, which point to each of the DDEKit header files
+ - go to dde-linux2.6 directory
+ - run make O=/path/to/builddir config
+ - configure build options
+ - run make O=/path/to/builddir
+ - libdde-linux26.a, libdde-linux26_net.a, libdde-linux26_block.a, and
+   libdde-linux26_char.a are built
+

@@ -1,0 +1,11 @@
+To build DDEKit-Linux go to ddekit-linux and follow the instructions
+in the README file
+To build DDE-Linux2.6 go to dde-linux2.6 and follow the instructions
+in the README file
+
+Now link libddekit.a, libdde-linux26*.a and a device driver together to run
+the driver in user space.
+See e1000e_example directory for an example of an e1000e network device
+driver, running in user space.
+
+So far, only network device drivers are tested.

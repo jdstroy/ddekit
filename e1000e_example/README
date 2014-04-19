@@ -1,0 +1,20 @@
+This is an example of DDEKit-Linux and dde-linux2.6, running the Intel e1000e
+network interface card device driver in user space.
+
+All files except the Makefile, tap.c, tap.h, tun.c, handle.c, and main.c
+are part of the device driver.
+
+This example uses the e1000e device driver to control a NIC and receive
+packets. The NIC is put in promiscous mode. A receive handler is registered
+with dde-linux-2.6. All received packets are forwarded to a TAP interface,
+which is created by the application. Simultaneously, packets read from the
+TAP interface are handed to dde-linux2.6 to be transmitted by the NIC.
+
+tap.c, tap.h, and tun.c handle creation of the TAP interface.
+handle.c containes code to read from and write to the TAP interface.
+main.c interfaces with dde-linux2.6 and manages program startup and shutdown,
+and contains some glue code.
+
+To build this example, the path to the DDEKit-Linux directory, dde-linux2.6
+build directory, and the dde-linux2.6 CPU configuration have to be edited
+in the Makefile.
